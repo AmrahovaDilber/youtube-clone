@@ -36,7 +36,7 @@
   <body class="flex h-screen overflow-hidden text-white relative">
     <!--ASIDE PART-->
     <aside
-      class="w-[220px] group has-[:checked]:w-[60px] shrink-0 bg-black21 pt-[16px] overflow-y-auto"
+      class="w-[220px] group has-[:checked]:w-[60px] shrink-0 bg-black21 pt-[16px] overflow-y-auto has-[:checked]:block has-[:checked]:transition-all has-[:checked]:pr-0 pr-[20px] overflow-y-auto overflow-hidden"
     >
       <!-- Logo PART -->
       <input type="checkbox" id="aside" class="hidden" />
@@ -60,14 +60,14 @@
           class="space-x-[20px] mb-[10px] flex items-center h-[34px] pl-[20px]"
         >
           <div class="relative flex">
-            <figure class="text-[30px]">
+            <figure class="text-[30px] group-hover:">
               <img
                 src="./assets/img/icons/home.svg"
-                class="object-cover w-full"
+                class="object-cover w-full group-hover:visible"
               />
             </figure>
           </div>
-          <span class="bg-gray-400 w-[100px] p-1 absolute left-10">Home</span>
+          <!-- <span class="bg-gray-400 w-[100px] p-1 absolute left-10 hidden group-hover:block">Home</span> -->
           <span class="text-[13px] group-has-[:checked]:hidden">Home</span>
         </a>
         <a
